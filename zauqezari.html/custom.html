@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Za uq-e-Zari Gallery</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      background-image: url('bg2.jpg');
+      background-size: 110%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-color: #f9f6f1;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px;
+      text-align: center;
+    }
+
+    h1 {
+      color: white;
+      margin-bottom: 10px;
+      font-size: 48px;
+      line-height: 1.2;
+    }
+
+    h2 {
+      font-size: 20px;
+      color: white;
+      margin-bottom: 40px;
+      font-weight: normal;
+      letter-spacing: 1px;
+    }
+
+    .carousel {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      gap: 20px;
+      padding: 20px;
+      width: 100%;
+      max-width: 1000px;
+    }
+
+    .carousel::-webkit-scrollbar {
+      display: none; 
+    }
+
+    .item {
+      flex: 0 0 auto;
+      scroll-snap-align: start;
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+
+    .item img {
+      width: 300px;
+      height: 400px;
+      object-fit: contain;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    .item:hover {
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 32px;
+      }
+
+      h2 {
+        font-size: 16px;
+      }
+
+      .item img {
+        width: 250px;
+        height: 330px;
+      }
+    }
+    .social-icons {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .social-icons img {
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .social-icons img:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <h1>CUSTOM EMBROIDERY<br>REPLICAS/YOUR OWN DESIGN</h1>
+  <h2>DESIGN WITH ZAUQ-E-ZARI</h2>
+
+  <div class="carousel">
+    <div class="item">
+      <img src="embroidery.jpg" alt="custom">
+    </div>
+    <div class="item">
+      <img src="embroidery2.jpg" alt="custom">
+    </div>
+     <div class="item">
+      <img src="embroidery4.JPG" alt="custom">
+    </div>
+     <div class="item">
+      <img src="embroidery5.JPG" alt="custom">
+    </div>
+  </div>
+
+  <div class="social-icons">
+    <a href="https://wa.me/yourwhatsapplink" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+    <a href="https://instagram.com/yourprofile" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+    </a>
+  </div>
+
+</body>
+</html>
