@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<style>
+    body {
+      background-color: #f9f6f1;
+      background-image: url('wleft.jpg'), url('wright.jpg'), url('bg2.jpg');
+      background-position: left center, right center, center;
+      background-size: 25%, 25%, 100%;
+      background-attachment: fixed, fixed, fixed;
+      background-repeat: no-repeat, no-repeat, no-repeat;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px;
+    }
+    
+    .collection-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .item {
+      background-color: #4e0d0d;
+      border: 1px solid  #4e0d0d;
+      border-radius: 8px;
+      overflow: hidden;
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+
+    .item:hover {
+      transform: scale(1.05);
+    }
+
+    .item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .item-title {
+      padding: 10px;
+      font-size: 20px;
+      text-align: center;
+      color: azure;
+    }
+        
+    .social-icons {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .social-icons img {
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .social-icons img:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+
+    <div class="collection-grid">
+    <div class="item">
+      <a href="custom.html" style="text-decoration: none; color: inherit;"> 
+      <img src="embroidery.jpg">
+      <div class="item-title">CUSTOM EMBROIDERY</div>
+      </a>
+    </div>
+    <div class="item">
+      <a href="shaadi.html" style="text-decoration: none; color: inherit;">
+      <img src="shaadi1.jpeg">
+      <div class="item-title">WEDDING</div>
+      </a>
+    </div>
+    <div class="item">
+    <a href="pret.html" style="text-decoration: none; color: inherit;">
+      <img src="rtw.jpg">
+      <div class="item-title">PRET WEAR</div>
+      </a>
+    </div>
+    <div class="item">
+    <a href="casuals.html" style="text-decoration: none; color: inherit;">
+        <img src="casual1.jpeg">
+        <div class="item-title">CASUALS</div>
+      </div>
+    </a>
+  </div>
+
+<div class="social-icons">
+    <a href="https://wa.me/yourwhatsapplink" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+    <a href="https://instagram.com/yourprofile" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+    </a>
+  </div>
+
+</body>
+</html>
